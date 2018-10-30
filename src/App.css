@@ -1,32 +1,36 @@
-.App {
+.main-container {
+  align-self: center;
+}
+
+.main-container SearchBar{
+  align-self: center;
+}
+
+.site-title {
+  align-self: center;
+}
+
+.site-title p{
+  padding: 10px;
+  align-self: center;
+  text-align: center;
+  font-size: 50px;
+}
+
+.search-bar {
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.search-bar input {
+  width: 75%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cardlist {
+  width: 90%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  width: 100%;
+  margin: 10px;
 }
