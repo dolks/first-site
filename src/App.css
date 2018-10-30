@@ -33,4 +33,9 @@
 .card {
   width: 100%;
   margin: 10px;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: darkcyan;
 }
