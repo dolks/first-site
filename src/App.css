@@ -17,16 +17,18 @@
   font-size: 100px;
   font-family: 'Ubuntu', sans-serif;
   font-style: italic;
+  color: darkcyan;
 }
 
 .search-bar {
   padding: 10px;
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
+  flex-direction: row;
 }
 
 .search-bar input {
-  width: 75%;
+  width: 60%;
 }
 
 .cardlist {
@@ -51,4 +53,14 @@
   padding-left: 10px;
   font-size: 30px;
   font-family: 'Ubuntu', sans-serif;
+}
+
+.buttonload {
+  background-color: darkcyan;
+  border: none;
+  color: white;
+  width: 60px;
+  height: 30px;
+  padding: 3px;
+  font-size: 16px
 }
