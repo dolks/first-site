@@ -14,12 +14,15 @@
   padding: 10px;
   align-self: center;
   text-align: center;
-  font-size: 50px;
+  font-size: 100px;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: italic;
 }
 
 .search-bar {
   padding: 10px;
   text-align: center;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .search-bar input {
@@ -38,4 +41,14 @@
 
 .card:hover {
   background-color: darkcyan;
+}
+
+.card-text-container {
+  align-self: center;
+}
+
+.card-text {
+  padding-left: 10px;
+  font-size: 30px;
+  font-family: 'Ubuntu', sans-serif;
 }

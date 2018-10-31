@@ -8,8 +8,8 @@ const Card = ({data, image}) => {
                     <div className='media-left'>
                         <img className='media-object' src={image} alt='' height='100' width='200' />
                     </div>
-                    <div className='media-body'>
-                        <div className='media-heading' style={{paddingLeft: 10}}>{data}</div>
+                    <div className='media-body card-text-container'>
+                        <div className='media-heading card-text'>{data}</div>
                     </div>
                 </div>
             </li>
