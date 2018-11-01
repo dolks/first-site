@@ -13,7 +13,6 @@ export const searchBreedsFunction = (term, allBreeds) => {
     return (dispatch) => {
         dispatch({type: TOGGLE_SEARCHING_STATE});
         if (!term){
-          window.alert("No results found.");
           dispatch({type: TOGGLE_SEARCHING_STATE});
           return;
         }
