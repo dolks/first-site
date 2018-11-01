@@ -1,2 +1,2 @@
-export * from './AppActions';
+export * from './HomePageActions';
 export * from './SearchBarActions';

@@ -1,2 +1,2 @@
-export * from './AppConstants';
+export * from './HomePageConstants';
 export * from './SearchBarConstants';
