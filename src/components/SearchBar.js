@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
+import {updateSearchQuery} from '../actions';
+import { connect } from 'react-redux';
 
 class SearchBar extends Component {
-
-    constructor(props){
-        super(props);
-
-        this.state = {searchQuery: ''};
-    }
 
     onButtonPress(term){
         this.props.onSearchPress(term);
@@ -23,9 +19,9 @@ class SearchBar extends Component {
             <div className='search-bar'>
                 <input
                 placeholder='Search breed name'
-                value={this.state.searchQuery}
-                onKeyPress={(event) => {this.onEnterPress(event.charCode, this.state.searchQuery)}}
-                onChange={(event) => {this.setState({searchQuery: event.target.value})}}/> 
+                value={this.props.searchQuery}
+                onKeyPress={(event) => {this.onEnterPress(event.charCode, this.props.searchQuery)}}
+                onChange={(event) => {this.props.updateSearchQuery(event.target.value)}}/> 
                 {this.props.loading ?<button className='buttonload'><i className="fa fa-circle-o-notch fa-spin"></i></button>
                 : <button className='buttonload' onClick={() => {this.onButtonPress(this.state.searchQuery)}}>Search</button>}
             </div>
@@ -34,4 +30,10 @@ class SearchBar extends Component {
     }
 }
 
-export default SearchBar;
+const mapStateToProps = ({ searchBar }) => {
+    return {
+        searchQuery: searchBar.searchQuery,
+    };
+  };
+  
+  export default connect(mapStateToProps, {updateSearchQuery})(SearchBar);
