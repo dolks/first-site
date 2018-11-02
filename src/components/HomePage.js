@@ -6,11 +6,9 @@ import CardList from './CardList';
 import { updateSearchBreeds, toggleSearchingState } from '../actions';
 import { connect } from 'react-redux';
 
-const API_KEY = 'AIzaSyBre0COb_sHpD89t596qVRNGVe9rLQ-Smg';
-
-YTSearch({key: API_KEY, term: 'dogs'}, function(data){
-  console.log(data);
-});
+// YTSearch({key: API_KEY, term: 'dogs'}, function(data){
+//   console.log(data);
+// });
 
 class HomePage extends Component {
 
