@@ -23,7 +23,7 @@ class HomePage extends Component {
             </p>
           </header>
           <SearchBar />
-          <CardList className='cardlist' breeds={this.props.searchBreeds.length===0? this.props.allBreeds : this.props.searchBreeds}/>
+          <CardList className='cardlist' breeds={this.props.searchBreeds}/>
         </div>
 
     );

@@ -26,12 +26,6 @@ export const searchBreedsFunction = (term, allBreeds) => {
             continue;
           } 
         };
-        if (newBreeds.length === 0){
-            window.alert("No results found.");
-            dispatch({type: UPDATE_SEARCH_BREEDS, payload: allBreeds});
-            dispatch({type: TOGGLE_SEARCHING_STATE});
-            return;
-        }
         dispatch({type: UPDATE_SEARCH_BREEDS, payload: newBreeds});
         dispatch({type: TOGGLE_SEARCHING_STATE});
         
